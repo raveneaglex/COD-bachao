@@ -3,16 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>COD Bachao</title>
+<title>COD Bachao - COD ka extra paisa bachao</title>
 <style>
-:root{--bg:#f6f7fb;--card:#fff;--text:#1b1d29;--muted:#667;--accent:#16a34a;--border:#dde1ea}
-@media (prefers-color-scheme:dark){:root{--bg:#12141c;--card:#1c1f2b;--text:#eef0f6;--muted:#9aa1b5;--accent:#22c55e;--border:#31364a}}
+:root{--bg:#f6f7fb;--card:#fff;--text:#1b1d29;--muted:#5d6477;--accent:#16a34a;--accent2:#0ea5e9;--border:#e1e5ee;--hero1:#16a34a;--hero2:#0ea5e9}
+@media (prefers-color-scheme:dark){:root{--bg:#10121a;--card:#1a1d29;--text:#eef0f6;--muted:#a0a7bc;--accent:#22c55e;--accent2:#38bdf8;--border:#2e3347;--hero1:#15803d;--hero2:#0369a1}}
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-.wrap{max-width:560px;margin:0 auto;padding:20px 16px 48px}
-h1{margin:8px 0 4px;font-size:1.6rem}
-p.sub{margin:0 0 20px;color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:16px}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.top{background:#f59e0b;color:#1b1d29;text-align:center;padding:8px 12px;font-weight:600;font-size:.9rem}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:36px 0 44px;text-align:center}
+.hero h1{font-size:2rem;margin:0 0 10px;line-height:1.2}
+.hero p{margin:0 auto 20px;max-width:480px;opacity:.95}
+.hero-img{width:100%;max-width:420px;border-radius:16px;margin:0 auto 20px;display:block}
+.cta{display:inline-block;background:#fff;color:#15803d;padding:13px 26px;border-radius:30px;font-weight:700;text-decoration:none}
+h2{font-size:1.35rem;margin:32px 0 14px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.card .ic{font-size:1.8rem}
+.card h3{margin:6px 0 4px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.93rem}
+.ex{text-align:center;font-size:1.05rem}
+.ex b{color:var(--accent)}
+.ad{background:linear-gradient(135deg,#fef3c7,#fde68a);color:#1b1d29;border-radius:14px;padding:18px;text-align:center;margin-top:14px;overflow:hidden}
+.ad img{width:100%;border-radius:10px;margin-bottom:10px}
+.ad .tag{font-size:.7rem;letter-spacing:.08em;opacity:.65}
 label{display:block;font-size:.9rem;margin:12px 0 4px;color:var(--muted)}
 input,textarea{width:100%;padding:11px;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--text);font-size:1rem}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
@@ -20,25 +35,61 @@ input,textarea{width:100%;padding:11px;border:1px solid var(--border);border-rad
 .result b{color:var(--accent)}
 button{width:100%;margin-top:16px;padding:13px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-size:1rem;font-weight:600;cursor:pointer}
 button:disabled{opacity:.45;cursor:not-allowed}
-.steps{margin:0;padding-left:20px;color:var(--muted)}
 .note{font-size:.8rem;color:var(--muted);margin-top:10px}
+details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}
+details p{margin:8px 0 0;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 16px 90px}
+.wa{position:fixed;right:16px;bottom:16px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:30px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>COD ka extra paisa bachao</h1>
-  <p class="sub">Hum aapka order prepaid karte hain. Aap delivery par sasta saaman lo.</p>
 
-  <div class="card">
-    <strong>Kaise kaam karta hai</strong>
-    <ol class="steps">
-      <li>Product ka link aur dono prices daalo (online aur COD)</li>
-      <li>Bachat dekho, hum sirf 50% service fee lete hain</li>
-      <li>Order WhatsApp par bhejo, hum prepaid order kar denge</li>
-      <li>Saaman aapke address par aayega, aap hume paisa doge</li>
-    </ol>
+<div class="top">🎉 Launch offer: pehle 20 order par koi extra charge nahi!</div>
+
+<section class="hero">
+  <div class="wrap">
+    <!-- Photo: apni image ka naam hero.png rakh ke repository me upload karo -->
+    <img class="hero-img" src="hero.png" alt="" onerror="this.remove()">
+    <h1>COD ka extra paisa bachao</h1>
+    <p>Hum aapka order prepaid karte hain. Aap delivery par sasta saaman lo, aur bachat ka aadha hissa aapka.</p>
+    <a class="cta" href="#order">Abhi bachat nikalo</a>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <h2>Kyun hum?</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">💰</div><h3>Seedhi bachat</h3><p>COD charge ka 50% aap bacha lete ho, baaki hamari fee.</p></div>
+    <div class="card"><div class="ic">🚚</div><h3>Ghar par delivery</h3><p>Saaman seedha aapke address par aata hai.</p></div>
+    <div class="card"><div class="ic">📲</div><h3>WhatsApp par aasaan</h3><p>Form bharo, order WhatsApp par aa jata hai. Koi app nahi.</p></div>
   </div>
 
+  <h2>Ek example dekho</h2>
+  <div class="card ex">
+    Online price <b>₹180</b>, COD price <b>₹200</b><br>
+    Bachat ₹20, hamari fee ₹10<br>
+    Aap doge sirf <b>₹190</b>, aur ₹10 bachaoge 🎯
+  </div>
+
+  <div class="ad">
+    <div class="tag">OFFER</div>
+    <!-- Photo: banner1.png naam se upload karo -->
+    <img src="banner1.png" alt="" onerror="this.remove()">
+    <strong>Dost ko batao, dono ko discount!</strong><br>
+    Apne dost ko bhejo aur uske pehle order par fee mein chhoot do.
+  </div>
+
+  <h2>4 step me kaam hota hai</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">1️⃣</div><h3>Link bhejo</h3><p>Product ka link aur dono prices daalo.</p></div>
+    <div class="card"><div class="ic">2️⃣</div><h3>Bachat dekho</h3><p>Calculator turant fee aur bachat dikhata hai.</p></div>
+    <div class="card"><div class="ic">3️⃣</div><h3>Order bhejo</h3><p>WhatsApp par order bhej do, hum prepaid kar denge.</p></div>
+    <div class="card"><div class="ic">4️⃣</div><h3>Saaman lo</h3><p>Delivery par aap hume paisa do.</p></div>
+  </div>
+
+  <h2 id="order">Apna order daalo</h2>
   <div class="card">
     <label>Product ka link</label>
     <input id="link" placeholder="https://...">
@@ -46,20 +97,36 @@ button:disabled{opacity:.45;cursor:not-allowed}
       <div><label>Online payment price (₹)</label><input id="online" type="number" min="0" placeholder="180"></div>
       <div><label>COD price (₹)</label><input id="cod" type="number" min="0" placeholder="200"></div>
     </div>
-
     <div class="result" id="result">Dono prices daalo, bachat yahan dikhegi.</div>
-
     <label>Aapka naam</label>
     <input id="name">
     <label>Phone number</label>
     <input id="phone" type="tel">
     <label>Poora address (pincode ke saath)</label>
     <textarea id="address" rows="3"></textarea>
-
     <button id="send" disabled>WhatsApp par order bhejo</button>
     <p class="note">Fee ka rule: bachat ka 50%. Agar bachat nahi hai to is service ki zaroorat nahi.</p>
   </div>
+
+  <div class="ad">
+    <div class="tag">AD</div>
+    <!-- Photo: banner2.png naam se upload karo -->
+    <img src="banner2.png" alt="" onerror="this.remove()">
+    <strong>Yahan aapka vigyapan</strong><br>
+    Apni dukaan ya product ka promotion yahan lagwao. WhatsApp par sampark karo.
+  </div>
+
+  <h2>Aksar pooche jaane wale sawal</h2>
+  <details><summary>Paisa kab dena hota hai?</summary><p>Naye customer se pehle UPI advance liya ja sakta hai. Purane customer delivery par bhi de sakte hain. Ye aap apne hisaab se tay karo.</p></details>
+  <details><summary>Fee kitni lagti hai?</summary><p>COD aur online price ke fark ka 50%. Fark nahi hai to fee nahi.</p></details>
+  <details><summary>Order cancel ya return ho to?</summary><p>Product ki return policy us shopping site ke rules par chalti hai. Hum return me madad karte hain.</p></details>
+  <details><summary>Kaun si sites par kaam hota hai?</summary><p>Jahan online payment par sasta milta hai aur COD par extra charge lagta hai.</p></details>
+
 </div>
+
+<footer>© COD Bachao. Sabhi brand names unke maalikon ke hain.</footer>
+
+<a class="wa" id="wa" href="#" target="_blank">💬 WhatsApp</a>
 
 <script>
 // ====== YAHAN APNI SETTINGS BADLO ======
@@ -69,6 +136,7 @@ const FEE_PERCENT = 50;             // bachat ka kitna % aap lete ho
 
 const $ = id => document.getElementById(id);
 let calc = null;
+$("wa").href = "https://wa.me/" + MY_WHATSAPP;
 
 function update(){
   const online = parseFloat($("online").value);
