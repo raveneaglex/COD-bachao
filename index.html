@@ -41,6 +41,12 @@ summary{font-weight:600;cursor:pointer}
 details p{margin:8px 0 0;color:var(--muted)}
 footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 16px 90px}
 .wa{position:fixed;right:16px;bottom:16px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;padding:13px 18px;border-radius:30px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.hero{position:relative;overflow:hidden;background-size:200% 200%;animation:gradmove 10s ease infinite}
+@keyframes gradmove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.hero .wrap{position:relative;z-index:1}
+.coin{position:absolute;bottom:-40px;font-size:1.8rem;opacity:.55;pointer-events:none;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-480px) rotate(360deg);opacity:0}}
+@media (prefers-reduced-motion:reduce){.hero,.coin{animation:none}}
 </style>
 </head>
 <body>
@@ -48,6 +54,11 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 16px 9
 <div class="top">🎉 Launch offer: pehle 20 order par koi extra charge nahi!</div>
 
 <section class="hero">
+  <span class="coin" style="left:8%;animation-duration:7s">💰</span>
+<span class="coin" style="left:25%;animation-duration:9s;animation-delay:2s">🪙</span>
+<span class="coin" style="left:45%;animation-duration:8s;animation-delay:1s">💸</span>
+<span class="coin" style="left:65%;animation-duration:10s;animation-delay:3s">🪙</span>
+<span class="coin" style="left:85%;animation-duration:7.5s;animation-delay:.5s">💰</span>
   <div class="wrap">
     <!-- Photo: apni image ka naam hero.png rakh ke repository me upload karo -->
     <img class="hero-img" src="hero.png" alt="" onerror="this.remove()">
